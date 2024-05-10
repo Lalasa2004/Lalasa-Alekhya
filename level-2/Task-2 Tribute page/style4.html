@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background: #dde3f698;
+}
+
+.outer {
+    background: rgb(29, 218, 241);
+    background: linear-gradient(90deg, rgb(27, 121, 236)10%, rgba(72, 204, 217, 1) 35%, rgb(44, 130, 235) 100%);
+    border-radius: 20px;
+    margin: 50px 80px 30px 80px;
+    padding: 20px;
+}
+
+.header h1 {
+    color: #260ff5;
+    font-size: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption h4 {
+    font-family: consolas, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.thumbnail {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail img {
+    border-radius: 10%;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium';
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+h3 {
+    margin: 7px 0;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #5168ff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 18px;
+}
+
+button:hover {
+    background-color: #1030ff;
+    padding: 12px;
+}
+
+.footer {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.footer p {
+    font-family: verdana;
+    font-size: 14px;
+    border-top: 1px #d8d8d8 solid;
+    text-align: center;
+}
+
+.footer a {
+    margin: 10px;
+}
+
+.footer a:hover {
+    color: #00b300;
+}
+
+@media screen and (max-width: 639px) {
+    .outer {
+        margin: 6px;
+    }
+
+    .thumbnail img {
+        width: 280px;
+        height: 280px;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+    .outer {
+        margin: 6px;
+    }
+
+    .thumbnail img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .footer {
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    .header h1 {
+        font-size: 42px;
+    }
+}
