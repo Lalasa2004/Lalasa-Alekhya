@@ -1,0 +1,114 @@
+/* Universal Design */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow: hidden;
+}
+
+/* main container Design  */
+.container {
+    display: grid;
+    place-items: center;
+    background: url(/background.jpg) center center/cover no-repeat;
+    height: 100vh;
+}
+
+/* calculator body Design  */
+.calculator-body {
+    width: 400px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 2px slid red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 8px;
+}
+
+/* input box screen Design  */
+.calculator-screen {
+    height: 100px;
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    text-align: right;
+    padding-right: 6px;
+}
+
+/* history p tag Design  */
+#para {
+    background-color: white;
+    padding: 5px;
+}
+
+/* Calculator's  row Design  */
+.calc-button-row {
+    display: grid;
+    /* Define columns */
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+/* Calculator's  button Design  */
+.button {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button hover Design  */
+.button.c:hover {
+    background-color: #c2b0f5;
+}
+
+
+.button.c {
+    background-color: #b3a1ea;
+    color: #f8eeee;
+}
+
+.button.l {
+    background-color: #e3e3ff;
+}
+
+.button.l:hover {
+    background-color: #ccccfa;
+}
+
+
+/* Add Media Query */
+@media screen and (max-width: 662px) and (min-width: 344px) {
+    .calculator-body {
+        width: 300px;
+        padding: 15px;
+        grid-gap: 5px;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .calculator-body {
+        width: 250px;
+        padding: 15px;
+        grid-gap: 3px;
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
